@@ -1,0 +1,117 @@
+/* src/components/ProjectDetails.css */
+body {
+  background-image: url("https://images.unsplash.com/photo-1615715757401-f30e7b27b912?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdoaXRlJTIwJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed when scrolling */
+  /* You can add other background styles like background-position, background-color, etc. */
+}
+ .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.project-card {
+  width: 300px;
+  margin: 16px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for all images */
+  /* object-fit: cover; /* Maintain aspect ratio while covering the specified width and height */
+}
+
+.project-card .card-body {
+  text-align: center;
+}
+
+.project-card input {
+  margin-top: 10px;
+}
+
+.project-card button {
+  margin-top: 10px;
+} 
+
+
+/* 
+.add-project-card {
+  width: 100px; 
+  height: 100px; 
+  margin: 16px;
+  border: 2px dashed #ccc; 
+  cursor: pointer;
+  position: relative; 
+}
+
+.add-project-card .card-body {
+  text-align: center;
+}
+
+.add-project-card h5 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.add-project-card p {
+  font-size: 12px; 
+  margin: 0;
+  color: #888; 
+}
+
+
+.add-project-card .card-body::before {
+ 
+  font-size: 36px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+.add-project-card {
+  width: 30px; 
+  height: 30px; 
+  margin: 16px;
+  border: 2px dashed #ccc; 
+  cursor: pointer;
+  position: relative; 
+} 
+
+.add-project-card .card-body {
+  text-align: center;
+}
+
+.add-project-card h5 {
+  font-size: 30px; /* Adjust the font size as needed */
+  margin-bottom: 5px;
+  
+  text-align: center;
+}
+
+.add-project-card p {
+  font-size: 10px;
+  margin: 0;
+  color: #888;
+}
+
+/* Position the plus symbol to the left */
+.add-project-card .card-body::before {
+  
+  font-size: 24px; /* Adjust the font size as needed */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
