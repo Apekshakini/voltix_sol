@@ -8,7 +8,10 @@ const bodyParser = require('body-parser');
 const s3Routes = require('./routes/awsroutes');
 
 //const s3Routes = require('./routes/s3Routes');
-
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://sahyadri-college-frontend-ywbg.vercel.app');
+  next();
+});
 
 
 
